@@ -6,7 +6,6 @@ import com.natan.bootcamp.cleanarchitecture.riskmanager.outside.dto.AccountDto;
 import com.natan.bootcamp.cleanarchitecture.riskmanager.outside.dto.CustomerDto;
 
 public class RisksManagement {
-
     public RisksManagement manageRisks(CustomerDto customerDto, AccountDto accountDto, double mvtAmount)
             throws RiskManagementException {
 
@@ -22,7 +21,6 @@ public class RisksManagement {
         if(mvtAmount > balance){
             throw new RiskManagementException("error: balance <"+ balance+ ">not enough for the mvt");
         }
-
         return this;
     }
 }

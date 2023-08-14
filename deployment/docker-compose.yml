@@ -16,7 +16,7 @@ services:
         image: placidenduwayo1/business-service-customer:latest
         container_name: business-service-customer
         build:
-            context: ../micro-service-customer
+            context: ../business-service-customer
             dockerfile: Dockerfile
         ports:
               - "8085:8085"
@@ -27,7 +27,7 @@ services:
         image: placidenduwayo1/business-service-account:latest
         container_name: business-service-account
         build:
-            context: ../micro-service-account
+            context: ../business-service-account
             dockerfile: Dockerfile
         ports:
             - "8086:8086"
@@ -38,7 +38,7 @@ services:
         image: placidenduwayo1/business-service-movement:latest
         container_name: business-service-movement
         build:
-            context: ../micro-service-movement
+            context: ../business-service-movement
             dockerfile: Dockerfile
         ports:
             - "8087:8087"
